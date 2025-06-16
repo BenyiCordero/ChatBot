@@ -1,32 +1,50 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '584264060644@s.whatsapp.net',
     fromMe: false,
-    id: '3F8C6A6C0883E58E82C999DB5FF664C7',
+    id: '3EB0ED9827A330621C9A2A',
     participant: undefined
   },
-  messageTimestamp: 1750039386,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750082143,
+  pushName: 'Gómez T',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'okai',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
+      deviceListMetadataVersion: 2
+    },
+    reactionMessage: ReactionMessage {
+      key: [MessageKey],
+      text: '👍',
+      senderTimestampMs: [Long]
     }
   },
-  body: 'okai',
-  from: '5214773400954'
+  body: '',
+  from: '584264060644'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3F9B080E2872B6544F2E',
+    participant: undefined
+  },
+  messageTimestamp: 1750082145,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'Hola', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5214761811897'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_16b9b3d4-94ec-43c6-9754-52c2333038ed',
-  keyword: 'key_e4cf118e-0a95-4365-a6d8-8cd05cfcecef',
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -40,115 +58,176 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4dbcb4fb02f8ffe87957d994a5ff6bc9'
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: 'D7BD93B774E5D73F79BE7D2C779DB155',
+    id: '3FE1FBA7B3042E64A5D7',
     participant: undefined
   },
-  messageTimestamp: 1750039395,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750082150,
+  pushName: 'Benyi',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'cuando son las fichas',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
+      text: 'informacion del campus',
+      contextInfo: [ContextInfo]
     },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'informacion del campus',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3FAD4DB1A7D92ECFD7DE',
+    participant: undefined
+  },
+  messageTimestamp: 1750082160,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'informacion del campus',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'informacion del campus',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3F8803B039477D4A211A',
+    participant: undefined
+  },
+  messageTimestamp: 1750082179,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'si', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'si',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3F852A69B846CFBB17E4',
+    participant: undefined
+  },
+  messageTimestamp: 1750082182,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'informacion del campus',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'informacion del campus',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584264060644@s.whatsapp.net',
+    fromMe: false,
+    id: '479627215B5CAFB6183F6D2899075E66',
+    participant: undefined
+  },
+  messageTimestamp: 1750082189,
+  pushName: 'Gómez T',
+  broadcast: false,
+  verifiedBizName: 'Gómez T',
+  messageStubType: 2,
+  messageStubParameters: [ 'Invalid PreKey ID' ],
+  body: undefined,
+  from: '584264060644'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584264060644@s.whatsapp.net',
+    fromMe: false,
+    id: '35784D0ED38168B9A58E27FD97FE7C51',
+    participant: undefined
+  },
+  messageTimestamp: 1750082189,
+  pushName: 'Gómez T',
+  broadcast: false,
+  verifiedBizName: 'Gómez T',
+  messageStubType: 2,
+  messageStubParameters: [ 'Invalid PreKey ID' ],
+  body: undefined,
+  from: '584264060644'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584264060644@s.whatsapp.net',
+    fromMe: false,
+    id: '479627215B5CAFB6183F6D2899075E66',
+    participant: undefined
+  },
+  messageTimestamp: 1750082191,
+  pushName: 'Gómez T',
+  broadcast: false,
+  verifiedBizName: 'Gómez T',
+  message: Message {
+    conversation: 'Buenos días. Soy la persona que creo la publicación sobre el proyecto',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'cuando son las fichas',
-  from: '5214773400954'
+  body: 'Buenos días. Soy la persona que creo la publicación sobre el proyecto',
+  from: '584264060644'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '584264060644@s.whatsapp.net',
     fromMe: false,
-    id: 'E893EEFE1BE6417AEB99FC299F497BC3',
+    id: '35784D0ED38168B9A58E27FD97FE7C51',
     participant: undefined
   },
-  messageTimestamp: 1750039409,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750082191,
+  pushName: 'Gómez T',
   broadcast: false,
+  verifiedBizName: 'Gómez T',
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'cuanto cuestan',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    conversation: 'Estás interesado en reunirnos.',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'cuanto cuestan',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: '558005DF3E962B61FB549F4E4E8C16B8',
-    participant: undefined
-  },
-  messageTimestamp: 1750039426,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'nomas pregunte z el precio d la ficha',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'nomas pregunte z el precio d la ficha',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: '7DDFD5B95B447A4DC880D1E645FB878A',
-    participant: undefined
-  },
-  messageTimestamp: 1750039428,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'ehh',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'ehh',
-  from: '5214773400954'
+  body: 'Estás interesado en reunirnos.',
+  from: '584264060644'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_16b9b3d4-94ec-43c6-9754-52c2333038ed',
-  keyword: 'key_e4cf118e-0a95-4365-a6d8-8cd05cfcecef',
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -162,193 +241,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4dbcb4fb02f8ffe87957d994a5ff6bc9'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: 'C9347D0CC674C96C7D1EF6F5469CE0DE',
-    participant: undefined
-  },
-  messageTimestamp: 1750039435,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'no de todo',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'no de todo',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: 'BCA648222EA3ED8DC42572CA93161CD2',
-    participant: undefined
-  },
-  messageTimestamp: 1750039439,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'JAJSJSK',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'JAJSJSK',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: '45B4BBCCE9CB7C0D040017D8BD3796B7',
-    participant: undefined
-  },
-  messageTimestamp: 1750039452,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'increíble ehh',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'increíble ehh',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: '8B5891B4A219AE9070001E6802C449C7',
-    participant: undefined
-  },
-  messageTimestamp: 1750039455,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'carreras',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'carreras',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: '9FEF838E56A46F640402F139E3102843',
-    participant: undefined
-  },
-  messageTimestamp: 1750039469,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'cual es su programa de estudios',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'cual es su programa de estudios',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: '42384B865A8658665FDB91560169C583',
-    participant: undefined
-  },
-  messageTimestamp: 1750039483,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'JAJAJAJAKA',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'JAJAJAJAKA',
-  from: '5214773400954'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
-    fromMe: false,
-    id: 'D436423DD1E51703EF92FE7479220B9E',
-    participant: undefined
-  },
-  messageTimestamp: 1750039485,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'okei',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'okei',
-  from: '5214773400954'
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_16b9b3d4-94ec-43c6-9754-52c2333038ed',
-  keyword: 'key_e4cf118e-0a95-4365-a6d8-8cd05cfcecef',
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -362,5 +259,339 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4dbcb4fb02f8ffe87957d994a5ff6bc9'
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5892A97B92BB1',
+    participant: undefined
+  },
+  messageTimestamp: 1750082360,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨'
+    }
+  },
+  body: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE589CB63D72389',
+    participant: undefined
+  },
+  messageTimestamp: 1750082364,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨'
+    }
+  },
+  body: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE53BC507E95ACD',
+    participant: undefined
+  },
+  messageTimestamp: 1750082368,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! ¡Estoy aquí para ayudarte en lo que necesites sobre la UTL! ¿Qué pregunta tienes hoy? 😊🎓'
+    }
+  },
+  body: '¡Hola! ¡Estoy aquí para ayudarte en lo que necesites sobre la UTL! ¿Qué pregunta tienes hoy? 😊🎓',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5A2C28C8078FC',
+    participant: undefined
+  },
+  messageTimestamp: 1750082368,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¿Te gustaría hacer otra consulta sobre la UTL? 🤔'
+    }
+  },
+  body: '¿Te gustaría hacer otra consulta sobre la UTL? 🤔',
+  from: '5214761811897'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
+  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
+  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE53A3C86EE0108',
+    participant: undefined
+  },
+  messageTimestamp: 1750082369,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨'
+    }
+  },
+  body: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5BDDC6A135E66',
+    participant: undefined
+  },
+  messageTimestamp: 1750082371,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨'
+    }
+  },
+  body: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5B35B67243BC8',
+    participant: undefined
+  },
+  messageTimestamp: 1750082371,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 ¿En qué puedo apoyarte hoy? ¡Estoy aquí para responder cualquier pregunta que tengas sobre la Universidad Tecnológica de León (UTL)! 🤖🎓✨'
+    }
+  },
+  body: '¡Hola! 👋 ¿En qué puedo apoyarte hoy? ¡Estoy aquí para responder cualquier pregunta que tengas sobre la Universidad Tecnológica de León (UTL)! 🤖🎓✨',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5A3E0D0DC63C3',
+    participant: undefined
+  },
+  messageTimestamp: 1750082371,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¿Te gustaría hacer otra consulta sobre la UTL? 🤔'
+    }
+  },
+  body: '¿Te gustaría hacer otra consulta sobre la UTL? 🤔',
+  from: '5214761811897'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
+  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
+  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5E1ED396A68D8',
+    participant: undefined
+  },
+  messageTimestamp: 1750082372,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨'
+    }
+  },
+  body: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5554D2F884CFE',
+    participant: undefined
+  },
+  messageTimestamp: 1750082373,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Claro! En la Universidad Tecnológica de León (UTL) tenemos una variedad de carreras interesantes para elegir. Aquí te detallo algunas de las carreras disponibles:\n' +
+        '\n' +
+        '1. Administración\n' +
+        '2. Negocios y Mercadotecnia\n' +
+        '3. Gastronomía\n' +
+        '4. Logística\n' +
+        '5. Mantenimiento Industrial\n' +
+        '6. Mecatrónica\n' +
+        '7. Electromovilidad\n' +
+        '8. Industrial\n' +
+        '9. Ambiental y Sustentabilidad\n' +
+        '10. Tecnologías de la Información e Innovación Digital\n' +
+        '11. Gestión y Desarrollo Turístico\n' +
+        '\n' +
+        'Si te interesa alguna carrera en particular o deseas más información sobre alguna especialización en específico, ¡no dudes en decírmelo! 😊🎓'
+    }
+  },
+  body: '¡Claro! En la Universidad Tecnológica de León (UTL) tenemos una variedad de carreras interesantes para elegir. Aquí te detallo algunas de las carreras disponibles:\n' +
+    '\n' +
+    '1. Administración\n' +
+    '2. Negocios y Mercadotecnia\n' +
+    '3. Gastronomía\n' +
+    '4. Logística\n' +
+    '5. Mantenimiento Industrial\n' +
+    '6. Mecatrónica\n' +
+    '7. Electromovilidad\n' +
+    '8. Industrial\n' +
+    '9. Ambiental y Sustentabilidad\n' +
+    '10. Tecnologías de la Información e Innovación Digital\n' +
+    '11. Gestión y Desarrollo Turístico\n' +
+    '\n' +
+    'Si te interesa alguna carrera en particular o deseas más información sobre alguna especialización en específico, ¡no dudes en decírmelo! 😊🎓',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE593493E09793D',
+    participant: undefined
+  },
+  messageTimestamp: 1750082373,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¿Te gustaría hacer otra consulta sobre la UTL? 🤔'
+    }
+  },
+  body: '¿Te gustaría hacer otra consulta sobre la UTL? 🤔',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5F706D12EC61B',
+    participant: undefined
+  },
+  messageTimestamp: 1750082373,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨'
+    }
+  },
+  body: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  from: '5214761811897'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_29066505-5e75-40aa-818e-e909acecaa6c',
+  keyword: 'key_20fc9360-822e-4a5f-9a7c-2ae3f2502c7a',
+  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd4eec654b294a371626cf65f4efb2e2f'
 }
