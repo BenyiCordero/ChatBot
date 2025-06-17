@@ -15,4 +15,4 @@
 auth_info.json
 session.json
 store.json
-qr.png
+*.qr.png

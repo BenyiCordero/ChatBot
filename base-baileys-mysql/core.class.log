@@ -2,25 +2,25 @@
   key: {
     remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '3FCE0938EA2B46C5DEF0',
+    id: '3F905AAD5D5551D91074',
     participant: undefined
   },
-  messageTimestamp: 1750084208,
+  messageTimestamp: 1750117970,
   pushName: 'Benyi',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'Hola', contextInfo: [ContextInfo] },
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
+  body: 'hola',
   from: '5214761811897'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
+  ref: 'ans_673fdc91-9c5e-4362-b5f6-8737f224ee1a',
+  keyword: 'key_99d68e9f-5218-4a0a-ac76-1008a81d8015',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -34,21 +34,21 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
+  refSerialize: 'aeee86decc56ad459e718c1be9901c45'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '3F68DF203D80F0226FE5',
+    id: '3F3C70E3D52A0A7D9569',
     participant: undefined
   },
-  messageTimestamp: 1750084213,
+  messageTimestamp: 1750117974,
   pushName: 'Benyi',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'Carreras',
+      text: 'listo JAJJAJA carreras',
       contextInfo: [ContextInfo]
     },
     messageContextInfo: MessageContextInfo {
@@ -56,78 +56,22 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Carreras',
+  body: 'listo JAJJAJA carreras',
   from: '5214761811897'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
-  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '3FB6900DD4D27C809D39',
+    id: '3F4BF3D2EEBB6BC85B2D',
     participant: undefined
   },
-  messageTimestamp: 1750084219,
-  pushName: 'Benyi',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '.', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '.',
-  from: '5214761811897'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
-  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5214761811897@s.whatsapp.net',
-    fromMe: false,
-    id: '3F9098A514C0D0F391BE',
-    participant: undefined
-  },
-  messageTimestamp: 1750084224,
+  messageTimestamp: 1750117981,
   pushName: 'Benyi',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'Carreras',
+      text: 'sabe we se bugeo',
       contextInfo: [ContextInfo]
     },
     messageContextInfo: MessageContextInfo {
@@ -135,12 +79,12 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Carreras',
+  body: 'sabe we se bugeo',
   from: '5214761811897'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
+  ref: 'ans_673fdc91-9c5e-4362-b5f6-8737f224ee1a',
+  keyword: 'key_99d68e9f-5218-4a0a-ac76-1008a81d8015',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -154,16 +98,172 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
+  refSerialize: 'aeee86decc56ad459e718c1be9901c45'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '3F2165F33C82BB9F3E98',
+    id: '3F40D64209CF55BA9B72',
     participant: undefined
   },
-  messageTimestamp: 1750084253,
+  messageTimestamp: 1750117999,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hago push',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hago push',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3F2E594E4EAB0D5ACEF2',
+    participant: undefined
+  },
+  messageTimestamp: 1750118008,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'segun yo ya quedo',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'segun yo ya quedo',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3FB1993D1A189FBA69DC',
+    participant: undefined
+  },
+  messageTimestamp: 1750118028,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'smn suerte amigo',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'smn suerte amigo',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3FBB20B319D5C92D1126',
+    participant: undefined
+  },
+  messageTimestamp: 1750118453,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'dime amigo',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'dime amigo',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3F3C042FFCE983292BA6',
+    participant: undefined
+  },
+  messageTimestamp: 1750118455,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'entonces?',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'entonces?',
+  from: '5214761811897'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_673fdc91-9c5e-4362-b5f6-8737f224ee1a',
+  keyword: 'key_99d68e9f-5218-4a0a-ac76-1008a81d8015',
+  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'aeee86decc56ad459e718c1be9901c45'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3FD53B8615F2E2C148B5',
+    participant: undefined
+  },
+  messageTimestamp: 1750118464,
+  pushName: 'Benyi',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'esque ya no mandaban ningun mensaje we y se apagaba',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'esque ya no mandaban ningun mensaje we y se apagaba',
+  from: '5214761811897'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214761811897@s.whatsapp.net',
+    fromMe: false,
+    id: '3F83BDBC836038321FE9',
+    participant: undefined
+  },
+  messageTimestamp: 1750118473,
   pushName: 'Benyi',
   broadcast: false,
   message: Message {
@@ -178,33 +278,27 @@
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '3BC5F1BD9228BD2C293F36B190087545',
+    id: '3F9546080942973D6012',
     participant: undefined
   },
-  messageTimestamp: 1750084332,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750118492,
+  pushName: 'Benyi',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'pqqq',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    extendedTextMessage: ExtendedTextMessage { text: 'no vdd', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
+      deviceListMetadataVersion: 2
     }
   },
-  body: 'pqqq',
-  from: '5214773400954'
+  body: 'no vdd',
+  from: '5214761811897'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
+  ref: 'ans_673fdc91-9c5e-4362-b5f6-8737f224ee1a',
+  keyword: 'key_99d68e9f-5218-4a0a-ac76-1008a81d8015',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -218,125 +312,74 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
+  refSerialize: 'aeee86decc56ad459e718c1be9901c45'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '52A5A848903757A6108F5F22E2124CC9',
+    id: '3F57DAE00AB0A8BB2455',
     participant: undefined
   },
-  messageTimestamp: 1750084350,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750118495,
+  pushName: 'Benyi',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'mmsi',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    extendedTextMessage: ExtendedTextMessage { text: 'nah', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
+      deviceListMetadataVersion: 2
     }
   },
-  body: 'mmsi',
-  from: '5214773400954'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
-  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
+  body: 'nah',
+  from: '5214761811897'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: '6857549671A0D64F5EA2CB03D64BE0FA',
+    id: '3FAB3523C76DEE72CF0C',
     participant: undefined
   },
-  messageTimestamp: 1750084358,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750118501,
+  pushName: 'Benyi',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'lo olvide bryan axel',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    extendedTextMessage: ExtendedTextMessage { text: 'no', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
+      deviceListMetadataVersion: 2
     }
   },
-  body: 'lo olvide bryan axel',
-  from: '5214773400954'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
-  answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
+  body: 'no',
+  from: '5214761811897'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214773400954@s.whatsapp.net',
+    remoteJid: '5214761811897@s.whatsapp.net',
     fromMe: false,
-    id: 'E09EB9AAFB7DCAC8AD462CD8EDFE90AD',
+    id: '3F4CC12CAEC7EB0CAFFC',
     participant: undefined
   },
-  messageTimestamp: 1750084360,
-  pushName: '𝑨𝒍𝒆𝒙𝒊𝒂 🌹',
+  messageTimestamp: 1750118521,
+  pushName: 'Benyi',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'perdóname',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
+      text: 'amigo voy a cambiar api keys de una',
+      contextInfo: [ContextInfo]
     },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
+      deviceListMetadataVersion: 2
     }
   },
-  body: 'perdóname',
-  from: '5214773400954'
+  body: 'amigo voy a cambiar api keys de una',
+  from: '5214761811897'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2baade74-09b7-4828-9408-15de09ddcf15',
-  keyword: 'key_534e8544-ae76-4778-a85d-7ea1dd8e1a63',
+  ref: 'ans_673fdc91-9c5e-4362-b5f6-8737f224ee1a',
+  keyword: 'key_99d68e9f-5218-4a0a-ac76-1008a81d8015',
   answer: '¡Hola! 👋 Soy tu Asistente de IA de la UTL, listo para ayudarte. ¿En qué puedo apoyarte hoy? 🤖✨',
   options: {
     media: null,
@@ -350,5 +393,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4bfcee07e1baf50b0f573407e292de3b'
+  refSerialize: 'aeee86decc56ad459e718c1be9901c45'
 }
