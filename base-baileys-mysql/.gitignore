@@ -15,4 +15,8 @@
 auth_info.json
 session.json
 store.json
+<<<<<<< HEAD
 *.qr.png
+=======
+qr.png
+>>>>>>> 52c06507bf08163ebebacca5530325ab3319fd04
