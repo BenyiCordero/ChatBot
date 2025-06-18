@@ -5,15 +5,13 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
- async function chat(promptBase, userInput, resumenContexto) {
+async function chat(promptBase, userInput, resumenContexto) {
     try {
-        // Armar el array de mensajes dinámico
         const messages = [
             { role: "system", content: promptBase }
         ];
 
         if (resumenContexto) {
-            // Agregamos el resumen como contexto previo (rol assistant o system)
             messages.push({ role: "system", content: `Resumen del contexto previo: ${resumenContexto}` });
         }
 

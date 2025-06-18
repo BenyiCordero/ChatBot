@@ -1,7 +1,6 @@
 const { createBot, createProvider, createFlow, addKeyword, EVENTS } = require('@bot-whatsapp/bot')
 require("dotenv").config();
-console.log("Variables de entorno cargadas:", process.env.MYSQL_DB_HOST); // Agrega esta línea
-
+console.log("Variables de entorno cargadas:", process.env.MYSQL_DB_HOST); 
 
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
@@ -11,9 +10,8 @@ const MySQLAdapter = require('@bot-whatsapp/database/mysql')
 const path = require("path");
 const fs = require("fs");
 const { chat, chatResoome } = require("./chatGPT");
-const { guardarConsulta, prompt, getImageUrlForSubtema, getResoomeForChat } = require("./consultas.controllers.js"); // Correctly import both functions
+const { guardarConsulta, prompt, getImageUrlForSubtema, getResoomeForChat } = require("./consultas.controllers.js"); 
 
-// Leer archivos
 const saludoPath = path.join(__dirname, "mensajes", "saludo.txt");
 const saludo = fs.readFileSync(saludoPath, "utf8");
 
@@ -26,40 +24,33 @@ const promptOrganizar = fs.readFileSync(promptOrganizarPath, "utf8");
 const promptResoomePath = path.join(__dirname, "mensajes", "promptResumen.txt");
 const promptResoome = fs.readFileSync(promptResoomePath, "utf8");
 
-
-// Flujo inicial que responde a "hola", "hi", etc.
 const flowEntrada = addKeyword([])
     .addAnswer(saludo, {capture : true}, async(ctx, {from:destructuredFrom, gotoFlow,flowDynamic}) => {
         const from = destructuredFrom || ctx.from;
         const consulta = ctx.body;
         console.log("flowConsultas - Valor de 'from':", from); 
-
         await consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic, from)
     });
 
-//Was added a flow when the answer is diferent to no or si/sí, but cases when the user answers siii, nooo, sip, etc, are not covered.
 const flowSeguirConsultando = addKeyword(EVENTS.ACTION)
     .addAnswer(seguirConsulta, { capture: true }, async (ctx, { gotoFlow, flowDynamic }) => {
         const mensaje = ctx.body.trim().toLowerCase();
         const from = ctx.from;
 
-        if (mensaje === 'no') { //Answer is no
+        if (mensaje === 'no') { 
             return gotoFlow(flowDespedida);
         }
 
-        if (mensaje === 'si' || mensaje === 'sí') { //Answer is yes
-            return gotoFlow(flowConsultas); //Manda a flowConsultas para preguntar sobre su siguiente consulta.
+        if (mensaje === 'si' || mensaje === 'sí') { 
+            return gotoFlow(flowConsultas); 
         }
 
-        //If the answer is diferent to yes or no, the chatbot answers the message as a question directly.
         const consulta = ctx.body;
         console.log("flowConsultas - Valor de 'from':", from); 
 
         await consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic, from)
     });
 
-    
-// Flujo para cuando el usuario dice "sí"
 const flowConsultas = addKeyword(EVENTS.ACTION)
     .addAnswer("Haz tu consulta:", { capture: true }, async (ctx, {gotoFlow, flowDynamic, from: destructuredFrom}) => {
         const from = destructuredFrom || ctx.from;
@@ -69,7 +60,6 @@ const flowConsultas = addKeyword(EVENTS.ACTION)
         await consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic, from)
     });
 
-    // Flujo por si el usuario dice "no"
 const flowDespedida = addKeyword(EVENTS.ACTION)
     .addAnswer('Gracias por hacer uso del chatbot UTL. ¡Hasta luego! 👋')
     .addAction(async(_, {flowDynamic})=>{
@@ -77,7 +67,6 @@ const flowDespedida = addKeyword(EVENTS.ACTION)
     });
 
 async function generarResumenDeConversacion(rows, promptBase) {
-    // Concatenar las consultas y respuestas en un solo texto
     let conversacionCompleta = "";
 
     for (const row of rows) {
@@ -85,14 +74,14 @@ async function generarResumenDeConversacion(rows, promptBase) {
         conversacionCompleta += `Asistente: ${row.respuesta}\n`;
     }
 
-    // Llamar a la función chat para obtener el resumen
     const resultadoResumen = await chatResoome(promptBase, conversacionCompleta);
 
     return resultadoResumen.content;
 }
 
-async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic, from) {
-    const respuestaClasificacionRaw = await chat(promptOrganizar, consulta);
+async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic) {
+    try { 
+        const respuestaClasificacionRaw = await chat(promptOrganizar, consulta);
         console.log("Respuesta cruda de clasificación:", respuestaClasificacionRaw); 
         const clasificacionTexto = respuestaClasificacionRaw.content.trim();
 
@@ -111,15 +100,14 @@ async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic
             subtemaId = 0;
         }
 
-        //Obtener mensajes y resumen
         const messages = await getResoomeForChat(ctx.from)
         const resoome = await generarResumenDeConversacion(messages, promptResoome)
 
         const respuestaConsultaRaw = await chat(promptTextForChat, consulta, resoome);
-        const respuestaTexto = respuestaConsultaRaw.content; // Contenido de texto del LLM
+        const respuestaTexto = respuestaConsultaRaw.content;
 
         const urlImagen = await getImageUrlForSubtema(subtemaId); 
-        console.log(`URL de imagen para subtema ${subtemaId}:`, urlImagen); // Para depuración
+        console.log(`URL de imagen para subtema ${subtemaId}:`, urlImagen);
 
         await guardarConsulta({
             numero: ctx.from,
@@ -134,6 +122,11 @@ async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic
             await flowDynamic(respuestaTexto);
         }
         return gotoFlow(flowSeguirConsultando);
+    } catch (error) {
+        console.error("Error in consultFunc:", error);
+        await flowDynamic("Lo siento, hubo un error procesando tu consulta. Por favor, inténtalo de nuevo más tarde.");
+        return gotoFlow(flowDespedida); 
+    }
 }
     
 const main = async () => {
