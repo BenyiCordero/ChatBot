@@ -34,13 +34,14 @@ async function guardarConsulta({ numero, mensaje, subtema_id, respuesta }) {
         const day = ahora.getDate();
         const week = getCurrentWeek();
         const [consultaResult] = await conn.query(`
-            INSERT INTO consulta (usuario_id, mensaje, subtema_id, tema_id, day, month, year, week )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)`, [usuario_id, mensaje, subtema_id, tema_id, day, month, year, week]);
+            INSERT INTO consulta
+            (usuario_id, mensaje, tema_id, day, month, year, week )
+            VALUES (?, ?, ?, ?, ?, ?, ?)`, [usuario_id, mensaje, tema_id, day, month, year, week]);
         
         const consulta_id = consultaResult.insertId;
         await conn.query(`
-            INSERT INTO respuesta (consulta_id, mensaje)
-            VALUES (?, ?)`, [consulta_id, respuesta.content]);
+            INSERT INTO respuesta (mensaje, consulta_id)
+            VALUES (?, ?)`, [ respuesta.content, consulta_id ]);
 
     } catch (error) {
         console.error("Error al guardar en la base de datos:", error);
@@ -78,7 +79,7 @@ async function getPrompt() {
  * @returns {string|null} La URL de la imagen o `null` si no hay imagen asociada.
  */
 async function getImageUrlForSubtema(subtemaId) {
-    let conn;
+    let conn; 
     try {
         conn = await db.getConnection();
         const [rows] = await conn.query("SELECT url_imagen FROM subtema_imagenes WHERE subtema_id = ?", [subtemaId]);
@@ -103,7 +104,7 @@ async function getResoomeForChat(numero){
     try{
         conn = await db.getConnection();
 
-        const [rows] = await conn.query ("select c.id, c.mensaje as usuario, r.mensaje as respuesta from consulta c join respuesta r on c.id = r.consulta_id join usuario u on u.id = c.usuario_id where c.subtema_id != 0 and u.numero_celular = ? order by c.id desc limit 10", [numero]) ;
+        const [rows] = await conn.query ("SELECT c.id, c.mensaje AS usuario, r.mensaje AS respuesta FROM consulta c JOIN respuesta r ON c.id = r.consulta_id JOIN usuario u ON u.id = c.usuario_id WHERE c.tema_id != 0  AND u.numero_celular = ? ORDER BY c.id DESC LIMIT 10;", [numero]) ;
 
         return rows.reverse();
         
