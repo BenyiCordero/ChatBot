@@ -10,7 +10,7 @@ const MySQLAdapter = require('@bot-whatsapp/database/mysql')
 const path = require("path");
 const fs = require("fs");
 const { chat, chatResoome } = require("./chatGPT");
-const { guardarConsulta, prompt, getImageUrlForSubtema, getResoomeForChat } = require("./consultas.controllers.js"); 
+const { guardarConsulta, prompt, getImageUrlForSubtema, getResoomeForChat } = require("./consultas_controllers.js"); 
 
 const saludoPath = path.join(__dirname, "mensajes", "saludo.txt");
 const saludo = fs.readFileSync(saludoPath, "utf8");
@@ -100,8 +100,17 @@ async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic
             subtemaId = 0;
         }
 
-        const messages = await getResoomeForChat(ctx.from)
-        const resoome = await generarResumenDeConversacion(messages, promptResoome)
+        const messages = await getResoomeForChat(ctx.from);
+        let resoome = "";
+        if (!messages || !Array.isArray(messages) || messages.length === 0) {
+            resoome = "No hay resumen del chat, es primera vez hablando"
+        } else {
+            resoome = await generarResumenDeConversacion(
+            messages,
+            promptResoome
+            );
+        }
+        resoome = await generarResumenDeConversacion(messages, promptResoome)
 
         const respuestaConsultaRaw = await chat(promptTextForChat, consulta, resoome);
         const respuestaTexto = respuestaConsultaRaw.content;
