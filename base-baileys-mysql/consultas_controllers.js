@@ -82,10 +82,10 @@ async function getImageUrlForSubtema(subtemaId) {
     let conn; 
     try {
         conn = await db.getConnection();
-        const [rows] = await conn.query("SELECT url_imagen FROM subtema_imagenes WHERE subtema_id = ?", [subtemaId]);
+        const [rows] = await conn.query("SELECT url_image FROM subtema_imagenes WHERE subtema_id = ?", [subtemaId]);
 
         if (rows.length > 0) {
-            return rows[0].url_imagen;
+            return rows[0].url_image;
         } else {
             return null; 
         }
