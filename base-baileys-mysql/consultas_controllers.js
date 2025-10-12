@@ -35,8 +35,8 @@ async function guardarConsulta({ numero, mensaje, subtema_id, respuesta }) {
         const week = getCurrentWeek();
         const [consultaResult] = await conn.query(`
             INSERT INTO consulta
-            (usuario_id, mensaje, tema_id, day, month, year, week )
-            VALUES (?, ?, ?, ?, ?, ?, ?)`, [usuario_id, mensaje, tema_id, day, month, year, week]);
+            (usuario_id, mensaje, subtema_id, day, month, year, week )
+            VALUES (?, ?, ?, ?, ?, ?, ?)`, [usuario_id, mensaje, subtema_id, day, month, year, week]);
         
         const consulta_id = consultaResult.insertId;
         await conn.query(`
@@ -82,10 +82,10 @@ async function getImageUrlForSubtema(subtemaId) {
     let conn; 
     try {
         conn = await db.getConnection();
-        const [rows] = await conn.query("SELECT url_imagen FROM subtema_imagenes WHERE subtema_id = ?", [subtemaId]);
+        const [rows] = await conn.query("SELECT url_image FROM subtema_imagenes WHERE subtema_id = ?", [subtemaId]);
 
         if (rows.length > 0) {
-            return rows[0].url_imagen;
+            return rows[0].url_image;
         } else {
             return null; 
         }
@@ -104,12 +104,12 @@ async function getResoomeForChat(numero){
     try{
         conn = await db.getConnection();
 
-        const [rows] = await conn.query ("SELECT c.id, c.mensaje AS usuario, r.mensaje AS respuesta FROM consulta c JOIN respuesta r ON c.id = r.consulta_id JOIN usuario u ON u.id = c.usuario_id WHERE c.tema_id != 0  AND u.numero_celular = ? ORDER BY c.id DESC LIMIT 10;", [numero]) ;
+        const [rows] = await conn.query ("SELECT c.id, c.mensaje AS usuario, r.mensaje AS respuesta FROM consulta c JOIN respuesta r ON c.id = r.consulta_id JOIN usuario u ON u.id = c.usuario_id WHERE c.subtema_id != 0  AND u.numero_celular = ? ORDER BY c.id DESC LIMIT 10;", [numero]) ;
 
         return rows.reverse();
         
     }catch (error) {
-        console.error("Error al obtener la URL de la imagen del subtema:", error);
+        console.error("Error al obtener el resumen del chat", error);
         return null;
     } finally {
         if (conn) {
