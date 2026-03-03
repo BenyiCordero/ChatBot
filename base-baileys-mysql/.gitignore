@@ -1,17 +1,12 @@
-# Carpetas que no subimos
 /node_modules/
-# Sesiones, logs, archivos temporales
 /bot_sessions/
 *.log
 
-# Archivos generados automáticamente (lock file)
 /package-lock.json
 
-# Variables de entorno (credenciales, claves)
 .env
 .env.*
 
-# Archivos de sesión de Baileys
 auth_info.json
 session.json
 store.json

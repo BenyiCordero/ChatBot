@@ -19,6 +19,7 @@
         "cache-manager": "5.2.4",
         "dotenv": "^16.5.0",
         "mysql2": "^2.3.3",
+        "node-fetch": "^2.7.0",
         "openai": "^4.103.0",
         "wa-sticker-formatter": "4.4.4"
     },
