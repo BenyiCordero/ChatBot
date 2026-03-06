@@ -2,6 +2,22 @@ const { createBot, createProvider, createFlow, addKeyword, EVENTS } = require('@
 require("dotenv").config();
 console.log("Variables de entorno cargadas:", process.env.MYSQL_DB_HOST); 
 
+function limpiarNumero(numero) {
+    if (!numero) return null;
+
+    numero = numero.replace('@s.whatsapp.net', '');
+
+    if (numero.startsWith('521')) {
+        numero = numero.substring(3);
+    }
+
+    if (numero.startsWith('52')) {
+        numero = numero.substring(2);
+    }
+
+    return numero;
+}
+
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MySQLAdapter = require('@bot-whatsapp/database/mysql')
@@ -57,7 +73,7 @@ const flowConsultas = addKeyword(EVENTS.ACTION)
         const consulta = ctx.body;
         console.log("flowConsultas - Valor de 'from':", from); 
 
-        await consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic, from)
+        await consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic)
     });
 
 const flowDespedida = addKeyword(EVENTS.ACTION)
@@ -100,7 +116,8 @@ async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic
             subtemaId = 0;
         }
 
-        const messages = await getResoomeForChat(ctx.from);
+        const numeroLimpio = limpiarNumero(ctx.from);
+        const messages = await getResoomeForChat(numeroLimpio);
         let resoome = "";
         if (!messages || !Array.isArray(messages) || messages.length === 0) {
             resoome = "No hay resumen del chat, es primera vez hablando"
@@ -119,7 +136,7 @@ async function consultFunc(promptOrganizar, consulta, ctx, gotoFlow, flowDynamic
         console.log(`URL de imagen para subtema ${subtemaId}:`, urlImagen);
 
         await guardarConsulta({
-            numero: ctx.from,
+            numero: numeroLimpio,
             mensaje: consulta,
             subtema_id: subtemaId,
             respuesta: respuestaConsultaRaw,

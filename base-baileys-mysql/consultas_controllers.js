@@ -6,7 +6,25 @@ function getCurrentWeek(){
     return semanaDelMes = Math.floor((dia - 1) / 7) + 1;
 }
 
+function limpiarNumero(numero) {
+    if (!numero) return null;
+
+    numero = numero.replace('@s.whatsapp.net', '');
+
+    // quitar prefijo Mexico
+    if (numero.startsWith('521')) {
+        numero = numero.substring(3);
+    }
+
+    if (numero.startsWith('52')) {
+        numero = numero.substring(2);
+    }
+
+    return numero;
+}
+
 async function guardarConsulta({ numero, mensaje, subtema_id, respuesta }) {
+    numero = limpiarNumero(numero);
     const conn = await db.getConnection();
 
     try {
